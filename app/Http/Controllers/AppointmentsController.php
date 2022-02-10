@@ -7,7 +7,11 @@ use Illuminate\Http\Request;
 class AppointmentsController extends Controller
 {
     public function index() {
-        
-        return view('appointments');
+
+        if (auth()->user()) {
+            return view('appointments');
+        } else {
+            return redirect()->route('login');
+        }
     }
 }

@@ -9,7 +9,7 @@ use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\HomeController;
 
-Route::middleware(['verified'])->group(function() {
+Route::middleware(['auth'])->group(function() {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/appointments', [AppointmentsController::class, 'index'])->name('appointments');
     Route::get('/logout', [LogoutController::class, 'index'])->name('logout');
