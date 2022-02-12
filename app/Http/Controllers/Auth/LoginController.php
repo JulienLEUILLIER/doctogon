@@ -27,6 +27,6 @@ class LoginController extends Controller
 
 
 
-        return redirect()->route('dashboard')->with('status', 'Successfully logged in');
+        return redirect()->route('appointments')->with('status', 'Successfully logged in');
     }
 }

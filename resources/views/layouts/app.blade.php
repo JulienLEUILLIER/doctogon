@@ -20,10 +20,10 @@
                 <a href="{{ route('home') }}" class="p-3">Home</a>
             </li>
             <li>
-                <a href="{{ route('dashboard') }}" class="p-3">Dashboard</a>
+                <a href="{{ route('appointments') }}" class="p-3">Appointments</a>
             </li>
             <li>
-                <a href="{{ route('appointments')}}" class="p-3">Appointments</a>
+                <a href="{{ route('doctors')}}" class="p-3">Doctors</a>
             </li>
         </ul>
         <ul class="flex">
