@@ -32,7 +32,7 @@ public/hot
 public_html/storage
 public_html/hot
 .env
-.env.example
+
 storage/*.key
 Homestead.yaml
 Homestead.json
